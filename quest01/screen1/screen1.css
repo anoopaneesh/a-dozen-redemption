@@ -1,0 +1,125 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  overflow-y: hidden;
+}
+html{
+  --anim: change 40s linear forwards;
+}
+#toggle-mute {
+  z-index: 200;
+  color: white;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 3rem;
+}
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.overlay{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+#story::after {
+  
+  content: "The land around cried in bloody tears,A wash of dark and morbid fears,";
+  position: absolute;
+  font-size: 4rem;
+  background:transparent;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  pointer-events: none;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  padding: 15px 20px;
+  transform: translate(-50%, -50%);
+  animation:var(--anim);
+}
+#story::after:hover{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+#proceed-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 4rem;
+  font-family: "Caveat",sans-serif;
+  border: none;
+}
+#proceed-btn:hover{
+  color: #fff;
+  border:1px solid #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0,0.5);
+}
+@keyframes change {
+  0%{
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    content: "The land around cried in bloody tears,A wash of dark and morbid fears,";
+    background: transparent;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    content: "Spirit of mane from Hera thee,Not a shifting shadow will restrain me,";
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "Consuming life like a leeching vine,Shivers shake through a thoughtless spine, ";
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    content: "I shall tame this dreamless beast,End its hunger with a taste of defeat,";
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+    content: 'I Hercules, call out to thee,Roar out to me, but only your screams will set you free"';
+  }
+  100% {
+    opacity: 0;
+    content:"";
+  }
+}
+
+@media(max-width:600px){
+  #story::after{
+    font-size: 2rem;
+  }
+}

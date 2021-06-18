@@ -1,0 +1,150 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  overflow-y: hidden;
+}
+html{
+  --anim: change 50s linear forwards;
+}
+#toggle-mute {
+  z-index: 200;
+  color: white;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 3rem;
+}
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.overlay{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+#story::after {
+  
+  content: "Queen Hippolyte, daughter of Ares,The brave leader of the Amazons.She was never a fan of pearls and silk,But of armors and blood.";
+  position: absolute;
+  font-size: 4rem;
+  background:transparent;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  pointer-events: none;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  padding: 15px 20px;
+  transform: translate(-50%, -50%);
+  animation:var(--anim);
+}
+#story::after:hover{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+#proceed-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 4rem;
+  font-family: "Caveat",sans-serif;
+  border: none;
+}
+#proceed-btn:hover{
+  color: #fff;
+  border:1px solid #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0,0.5);
+}
+/*
+
+
+
+
+
+
+
+
+*/
+@keyframes change {
+  0%{
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    content: "Queen Hippolyte, daughter of Ares,The brave leader of the Amazons.She was never a fan of pearls and silk,But of armors and blood.";
+    background: transparent;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    content: "She never wore jewels,But she did worn with pride,A leather girdle,Embellished by a man's skull,And her sword and spear.";
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "Sailing the turbulent sea,Were Hercules and his men,In the mission to slay the queen And return with the girdle";
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    content: "It wasn't easy as they thought For the amazon women fought fiercely To shield their queen.";
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+    content: 'Hercules did eventually killed Hippolyte And secured her girdle, But the her valour and the bravery of Amazon women would be echoed in the whole Greece,For many more years to come.';
+  }
+  100% {
+    opacity: 0;
+    content:"";
+  }
+}
+
+@media(max-width:600px){
+  #story::after{
+    font-size: 2rem;
+  }
+}
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+

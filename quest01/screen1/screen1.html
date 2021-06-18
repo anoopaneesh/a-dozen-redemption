@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../../icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Nemean Lion</title>
+    <link rel="stylesheet" href="screen1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <button id="toggle-mute">
+      <i class="bi bi-volume-up"></i>
+    </button>
+    <video id="bg-video" loop>
+      <source src="../../videos/My Video1-1.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"> 
+    </div>
+    <span id="story"></span>
+    <button id="proceed-btn">Proceed</button>
+    <script src="./screen1.js" defer></script>
+  </body>
+</html>

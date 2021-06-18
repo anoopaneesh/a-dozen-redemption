@@ -1,0 +1,152 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  overflow-y: hidden;
+}
+html{
+  --anim: change 30s linear forwards;
+}
+#toggle-mute {
+  z-index: 200;
+  color: white;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 3rem;
+}
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.overlay{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+/*
+"
+
+
+
+
+
+
+*/
+#story::after {
+  
+  content: "It was a fierce chase,The cretan bull was runningAll around the labyrinth.";
+  position: absolute;
+  font-size: 4rem;
+  background:transparent;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  pointer-events: none;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  padding: 15px 20px;
+  transform: translate(-50%, -50%);
+  animation:var(--anim);
+}
+#story::after:hover{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+#proceed-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 4rem;
+  font-family: "Caveat",sans-serif;
+  border: none;
+}
+#proceed-btn:hover{
+  color: #fff;
+  border:1px solid #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0,0.5);
+}
+/*
+
+
+
+
+
+
+
+
+*/
+@keyframes change {
+  0%{
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+    content: "It was a fierce chase,The cretan bull was runningAll around the labyrinth.";
+    background: transparent;
+  }
+  24% {
+    opacity: 0;
+  }
+  36% {
+    opacity: 1;
+    content: "He roared at Hercules,Which echoed around the entire Land of Crete.";
+  }
+  48% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+    content: "Hercules had but the strongest arms,He throttled the bull,Until it's screams turned feeble as breeze.";
+  }
+  72% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 1;
+    content: "Thus  accomplished his seventh labour,Hercules had a curve of smile";
+  }
+  100% {
+    opacity: 0;
+    content:"";
+  }
+}
+
+@media(max-width:600px){
+  #story::after{
+    font-size: 2rem;
+  }
+}
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+

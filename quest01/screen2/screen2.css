@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  --display:none;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: url(../../images/lion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+}
+
+h2 {
+  font-family: "Kaushan Script", sans-serif;
+}
+
+#label {
+  font-family: "Parisienne" sans-serif !important;
+}
+#text {
+  /* padding: 10px; */
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 400px;
+  margin-right: 450px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  font-size: 19px;
+  color: red;
+  font-family: "Parisienne", sans-serif !important;
+}
+
+#ans {
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  width: 350px;
+  height: 200px;
+  /* margin-left: 400px; */
+  color: red;
+  background: url(../../images/cave.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hercules {
+  width: 80px;
+  margin-right: 10px;
+}
+.img-container::after{
+  display: var(--display);
+  content:'Get to the source of the evil, to kill it';
+  position: absolute;
+  top:-20%;
+  background-color: black;
+  border-radius:10px 10px 10px 0px;
+  padding: 5px;
+  left: 10%;
+  color: white;
+  z-index: 100;
+}
+.bt {
+  border: 2px solid white;
+  width: 100px;
+  border-radius: 30px;
+  color: red;
+  background: black;
+  font-family: "Parisienne", sans-serif;
+  font-size: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.bt:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+  color:#fff;
+  border: 1px solid #fff;
+}
+
+
+
+@media(max-width:600px){
+  #text{
+    flex-direction: column;
+  }
+  .img-container::after{
+    content:'Get to the source of the evil, to kill it';
+    position: absolute;
+    top:-12%;
+    background-color: black;
+    border-radius:10px 10px 10px 0px;
+    padding: 5px;
+    left: 50%;
+    color: white;
+    z-index: 100;
+  }
+  body{
+    background:url('../../images/lion2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
