@@ -11,7 +11,7 @@ html {
   --display: none;
 }
 body {
-  background: url(../../images/bull.jpg);
+  background: url(../../images/hell.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
@@ -50,12 +50,16 @@ i {
   font-weight: lighter;
 }
 
-h2 {
+h2,h3,p {
   font-family: 'Kaushan Script', sans-serif;
 }
 
 #label {
   font-family: 'Parisienne' sans-serif !important;
+}
+h3{
+  margin-top:30px;
+  margin-bottom:10px;
 }
 #text {
   /* padding: 10px; */
@@ -66,7 +70,6 @@ h2 {
   justify-content: space-between;
   /* margin-top: 400px;
     margin-right: 450px; */
-    margin-top: 100px;
   position: relative;
 }
 
@@ -81,11 +84,6 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  text-align: center;
-}
-.msg > h2 > a{
-  color: white;
-  text-decoration: none;
 }
 .msg h2 {
   font-size: 2rem;
@@ -126,15 +124,22 @@ h2 {
   width: 200px;
   margin-right: 10px;
 }
+.clue-a{
+  color: white;
+  text-decoration: none;
+}
+.clue-a:hover{
+  text-decoration: underline;
+}
 .img-container::after {
   display: var(--display);
-  content: 'The labryinth was a maze with hidden walls';
+  content: 'The keys you seek are of the form Flag{xxxx}, only the three together can grant you an audience';
   position: absolute;
-  top: -30%;
+  top: 0;
   background-color: black;
   border-radius: 10px 10px 10px 0px;
   padding: 5px;
-  left: 10%;
+  left:0;
   color: white;
   z-index: 100;
 }
@@ -188,11 +193,5 @@ h2 {
     justify-content: end;
     background-repeat: repeat-y;
     padding: 10px 50px;
-  }
-  #qr {
-    margin: 20px 20px;
-  }
-  .msg {
-    flex-direction: row;
   }
 }

@@ -35,6 +35,9 @@ function main() {
     case 11:
       window.location = '/quest11/screen1/screen1.html'
       break
+    case 12:
+      window.location = '/quest12/screen1/screen1.html'
+      break
     default:
       break
   }

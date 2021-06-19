@@ -112,12 +112,12 @@ h2 {
   background-repeat: no-repeat;
 }
 #hercules {
-  width: 80px;
+  width:200px;
   margin-right: 10px;
 }
 .img-container::after {
   display: var(--display);
-  content: 'Follow the path, I\'ve already told you the way "?_?-2_?-2-1_?-2-2-1_?-2-2-1-12"';
+  content: 'Follow the path, I\'ve already told you the way "©>©-2>©-2-1>©-2-2-1>©-2-2-1-12>"';
   position: absolute;
   top: -30%;
   background-color: black;
