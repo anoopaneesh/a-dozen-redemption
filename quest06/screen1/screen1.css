@@ -3,13 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Caveat", sans-serif;
+  font-family: 'Caveat', sans-serif;
   box-sizing: border-box;
 }
-body{
+body {
   overflow-y: hidden;
 }
-html{
+html {
   --anim: change 40s linear forwards;
 }
 #toggle-mute {
@@ -27,20 +27,19 @@ html{
   min-width: 100%;
   min-height: 100%;
 }
-.overlay{
+.overlay {
   position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #story::after {
-  
-  content: "The bird flock of Stymphalos were known in the whole Greece,";
+  content: 'The bird flock of Stymphalos were known in the whole Greece,';
   position: absolute;
   font-size: 4rem;
-  background:transparent;
+  background: transparent;
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -50,14 +49,14 @@ html{
   left: 50%;
   padding: 15px 20px;
   transform: translate(-50%, -50%);
-  animation:var(--anim);
+  animation: var(--anim);
 }
-#story::after:hover{
+#story::after:hover {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
 }
-#proceed-btn{
+#proceed-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,22 +65,22 @@ html{
   border-radius: 10px;
   padding: 15px 20px;
   font-size: 4rem;
-  font-family: "Caveat",sans-serif;
+  font-family: 'Caveat', sans-serif;
   border: none;
 }
-#proceed-btn:hover{
+#proceed-btn:hover {
   color: #fff;
-  border:1px solid #fff;
+  border: 1px solid #fff;
   cursor: pointer;
-  background: rgba(0, 0, 0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 @keyframes change {
-  0%{
+  0% {
     opacity: 0;
   }
   10% {
     opacity: 1;
-    content: "The bird flock of Stymphalos were known in the whole Greece,";
+    content: 'The bird flock of Stymphalos were known in the whole Greece,';
     background: transparent;
   }
   20% {
@@ -89,52 +88,38 @@ html{
   }
   30% {
     opacity: 1;
-    content: "For they flew against those who come to hunt them, wounding and killing them with their beaks.";
+    content: 'For they flew against those who come to hunt them, wounding and killing them with their beaks.';
   }
   40% {
     opacity: 0;
   }
   50% {
     opacity: 1;
-    content: "All armor of bronze or iron that men wear were pierced by these birds,But the one sound that scares them away was that of the krotala,";
+    content: 'All armor of bronze or iron that men wear were pierced by these birds,But the one sound that scares them away was that of the krotala,';
   }
   60% {
     opacity: 0;
   }
   70% {
     opacity: 1;
-    content: "Hercules would never have surpassed this labour of Eurystheus.";
+
+    content: 'Thanks to Athena for lending them to our hero or else';
   }
   80% {
     opacity: 0;
   }
   90% {
     opacity: 1;
-    content: 'Thanks to Athena for lending them to our hero or else';
+    content: 'Hercules would never have surpassed this labour of Eurystheus.';
   }
   100% {
     opacity: 0;
-    content:"";
+    content: '';
   }
 }
 
-@media(max-width:600px){
-  #story::after{
+@media (max-width: 600px) {
+  #story::after {
     font-size: 2rem;
   }
 }
-
-
-
- 
-
- 
-
-
-
-
-
-
-
-
-
