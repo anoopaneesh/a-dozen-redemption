@@ -50,7 +50,8 @@ window.addEventListener('DOMContentLoaded', () => {
   quitBtn.addEventListener('click', () => {
     let main = document.querySelector('main')
     let h1 = document.querySelector('h1')
-    h1.textContent = `You reached till level ${user.quest}`
+    h1.innerHTML = `Hey ${user.name || 'Player'}<br>You reached till level ${user.quest}`
+    
     while (main.firstChild) {
       main.removeChild(main.firstChild)
     }

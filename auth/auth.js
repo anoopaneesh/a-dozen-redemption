@@ -15,8 +15,9 @@ function main() {
   let formContent = document.querySelector('#form-content')
   form.addEventListener('submit', (event) => {
     event.preventDefault()
-    let email = event.target[0].value
-    let password = event.target[1].value
+    let name = event.target[0].value
+    let email = event.target[1].value
+    let password = event.target[2].value
     formContent.innerHTML = `<h1>Loading</h1>`
     firebase
       .auth()
@@ -24,7 +25,7 @@ function main() {
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user
-        localStorage.setItem('user', JSON.stringify({uid:user.uid,quest:0}))
+        localStorage.setItem('user', JSON.stringify({uid:user.uid,quest:0,name:name}))
         window.location = '/'
       })
       .catch((error) => {
