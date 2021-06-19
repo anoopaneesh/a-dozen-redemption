@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded',()=>{
     let user = JSON.parse(localStorage.getItem('user'))
     if (!user) window.location = '/auth/authorization.html'
-    if (user.quest > 6) {
+    if (user.quest < 6) {
       window.location = '/'
     }
     let ans = document.querySelector('input')
