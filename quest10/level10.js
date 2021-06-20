@@ -17,7 +17,7 @@ function main() {
       localStorage.setItem('user', JSON.stringify(user))
       setLoading('/quest11/screen1/screen1.html')
     } else {
-      label.textContent = 'Enter correct cipher'
+      label.textContent = 'Did you try plus coordinates?'
     }
   })
   let hercules = document.getElementById('hercules')
